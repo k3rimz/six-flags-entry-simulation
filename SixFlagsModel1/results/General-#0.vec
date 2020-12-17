@@ -1,0 +1,41 @@
+version 2
+run General-0-20201217-10:50:09-128
+attr configname General
+attr datetime 20201217-10:50:09
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SixFlags1
+attr processid 128
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.source.interArrivalTime exponential(0.6s)
+param **.server.serviceTime exponential(1.3s)
+param **.server1.serviceTime exponential(1.3s)
+param **.server2.serviceTime exponential(1.3s)
+param **.server3.serviceTime exponential(1.3s)
+param **.server4.serviceTime exponential(1.3s)
+param **.server5.serviceTime exponential(1.3s)
+param **.server6.serviceTime exponential(1.3s)
+param **.server7.serviceTime exponential(1.3s)
+param **.server8.serviceTime exponential(1.3s)
+param **.source.numJobs 20000
+
+vector 0 SixFlags1.passiveQueue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 SixFlags1.passiveQueue2 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 2 SixFlags1.passiveQueue3 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+0	0	0	0
+1	0	0	0
+2	0	0	0
+
