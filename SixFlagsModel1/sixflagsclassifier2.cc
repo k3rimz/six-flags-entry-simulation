@@ -24,6 +24,7 @@ void sixflagsclassifier2::handleMessage(cMessage *msg)
 {
     Job *job = check_and_cast<Job *>(msg);
     int outGateIndex = -1;
+    int v1 = rand() % 100 + 1;
     if (strcmp(dispatchField, "type") == 0)
         outGateIndex = job->getKind();
     else if (strcmp(dispatchField, "priority") == 0)
@@ -33,14 +34,13 @@ void sixflagsclassifier2::handleMessage(cMessage *msg)
 
     if (outGateIndex < 0 || outGateIndex >= gateSize("out"))
         send(job, "rest");
-    else{
-        int v1 = rand() % 100 + 1;
+    else
+        v1 = rand() % 100 + 1;
     if(v1 <= 2){
         send(job, "rest");
     }
     else{
         send(job, "out", outGateIndex);
-    }
     }
 }
 
