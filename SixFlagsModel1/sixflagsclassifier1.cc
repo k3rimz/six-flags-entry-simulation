@@ -36,7 +36,7 @@ void sixflagsclassifier1::handleMessage(cMessage *msg)
         send(job, "rest");
     else
         v1 = rand() % 100 + 1;
-    if(v1 <= 30){
+    if(v1 <= 10){
         send(job, "rest");
     }
     else{
