@@ -7,7 +7,8 @@ import org.omnetpp.queueing.Server;
 import org.omnetpp.queueing.Sink;
 import org.omnetpp.queueing.Source;
 import org.omnetpp.queueing.SourceOnce;
-
+import org.omnetpp.queueing.sixflagsclassifier1;
+import org.omnetpp.queueing.sixflagsclassifier2;
 
 
 //
@@ -88,17 +89,17 @@ network SixFlags1
         passiveQueue9: PassiveQueue {
             @display("p=733,494");
         }
-        classifier1: Classifier {
-            @display("p=996,277");
-        }
         source: Source {
             @display("p=74,273;is=l");
         }
         router: Router {
             @display("p=338,255");
         }
-        classifier: Classifier {
-            @display("p=207,263;is=l");
+        sixflagsclassifier1: sixflagsclassifier1 {
+            @display("p=215,277;is=l");
+        }
+        sixflagsclassifier2: sixflagsclassifier2 {
+            @display("p=937,277;is=l");
         }
     connections:
         passiveQueue.out++ --> server.in++;
@@ -118,18 +119,18 @@ network SixFlags1
         server2.out --> router1.in++;
         passiveQueue4.out++ --> server3.in++;
         server3.out --> router1.in++;
-        classifier1.out++ --> sink.in++;
-        server4.out --> classifier1.in++;
-        server5.out --> classifier1.in++;
-        server6.out --> classifier1.in++;
-        server7.out --> classifier1.in++;
-        server8.out --> classifier1.in++;
-        classifier1.rest --> passiveQueue5.in++;
         server.out --> router.in++;
         router.out++ --> passiveQueue1.in++;
         router.out++ --> passiveQueue2.in++;
         router.out++ --> passiveQueue4.in++;
-        source.out --> classifier.in++;
-        classifier.rest --> passiveQueue.in++;
-        classifier.out++ --> router.in++;
+        source.out --> sixflagsclassifier1.in++;
+        sixflagsclassifier1.rest --> passiveQueue.in++;
+        sixflagsclassifier1.out++ --> router.in++;
+        server4.out --> sixflagsclassifier2.in++;
+        server5.out --> sixflagsclassifier2.in++;
+        server6.out --> sixflagsclassifier2.in++;
+        server7.out --> sixflagsclassifier2.in++;
+        server8.out --> sixflagsclassifier2.in++;
+        sixflagsclassifier2.out++ --> sink.in++;
+        sixflagsclassifier2.rest --> passiveQueue5.in++;
 }
