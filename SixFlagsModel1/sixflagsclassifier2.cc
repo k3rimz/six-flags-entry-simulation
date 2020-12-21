@@ -33,13 +33,14 @@ void sixflagsclassifier2::handleMessage(cMessage *msg)
 
     if (outGateIndex < 0 || outGateIndex >= gateSize("out"))
         send(job, "rest");
-    else
+    else{
         int v1 = rand() % 100 + 1;
     if(v1 <= 2){
         send(job, "rest");
     }
     else{
         send(job, "out", outGateIndex);
+    }
     }
 }
 
