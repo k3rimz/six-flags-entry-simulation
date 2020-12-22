@@ -1,0 +1,73 @@
+file 2840730 1608560823                                         
+version 2
+run General-0-20201221-09:26:51-26448
+attr configname General
+attr datetime 20201221-09:26:51
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SixFlags1
+attr processid 26448
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.source.interArrivalTime exponential(1.008s)
+param **.server.serviceTime exponential(2.5s)
+param **.server4.serviceTime exponential(5s)
+param **.server5.serviceTime exponential(5s)
+param **.server6.serviceTime exponential(5s)
+param **.server7.serviceTime exponential(5s)
+param **.server8.serviceTime exponential(5s)
+param **.server1.serviceTime exponential(1.2s)
+param **.server2.serviceTime exponential(1.2s)
+param **.server3.serviceTime exponential(1.2s)
+param **.source.numJobs 20000
+param **.router1.routingAlgorithm "\"roundrobin\""
+param **.router.routingAlgorithm "\"roundrobin\""
+
+vector 0 SixFlags1.passiveQueue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 SixFlags1.passiveQueue1 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 2 SixFlags1.passiveQueue2 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 3 SixFlags1.passiveQueue4 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 4 SixFlags1.passiveQueue5 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 5 SixFlags1.passiveQueue6 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 6 SixFlags1.passiveQueue7 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 7 SixFlags1.passiveQueue8 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 8 SixFlags1.passiveQueue9 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 9 SixFlags1.sink lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+0	2267 249283 0 255925 0 20016.855698892885 8323 0 25 24085 144141
+1	251550 157516 0 256541 0 20072.797465468517 5269 0 8 6148 13942
+2	409066 160865 0 256387 0 20057.726310213398 5385 0 9 6306 14696
+3	569931 151879 0 256295 0 20049.236114204394 5073 0 9 5656 12508
+4	721810 277424 0 259464 0 22057.757591550678 8823 0 406 1317575 316188683
+5	999234 235079 0 257267 0 20264.010348491155 7657 0 75 226572 9338352
+6	1234313 242746 0 256980 0 20177.735045701357 7899 0 91 222111 10063817
+7	1477059 241039 0 257778 0 20437.938067535855 7767 0 121 460159 40231467
+8	1718098 246496 0 258505 0 20837.210725825584 7919 0 167 585287 58987327
+9	1964594 876134 35 259470 4.79956225078 22059.383958294222 20000 0.245028101043 3814.3322020409 7318257.0088172 6100492078.9847
+

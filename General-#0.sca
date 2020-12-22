@@ -1,0 +1,264 @@
+version 2
+run General-0-20201221-09:26:51-26448
+attr configname General
+attr datetime 20201221-09:26:51
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SixFlags1
+attr processid 26448
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.source.interArrivalTime exponential(1.008s)
+param **.server.serviceTime exponential(2.5s)
+param **.server4.serviceTime exponential(5s)
+param **.server5.serviceTime exponential(5s)
+param **.server6.serviceTime exponential(5s)
+param **.server7.serviceTime exponential(5s)
+param **.server8.serviceTime exponential(5s)
+param **.server1.serviceTime exponential(1.2s)
+param **.server2.serviceTime exponential(1.2s)
+param **.server3.serviceTime exponential(1.2s)
+param **.source.numJobs 20000
+param **.router1.routingAlgorithm "\"roundrobin\""
+param **.router.routingAlgorithm "\"roundrobin\""
+
+scalar SixFlags1.passiveQueue queueingTime:mean 8.2189042017215
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar SixFlags1.passiveQueue queueingTime:max 52.51357686834
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar SixFlags1.passiveQueue queueLength:timeavg 1.5503089500604
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar SixFlags1.passiveQueue queueLength:max 25
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar SixFlags1.passiveQueue dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar SixFlags1.server busy:timeavg 0.65206282276391
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar SixFlags1.sink generation:mean 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, mean"
+scalar SixFlags1.sink generation:max 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, max"
+scalar SixFlags1.sink delaysVisited:mean 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, mean"
+scalar SixFlags1.sink delaysVisited:max 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, max"
+scalar SixFlags1.sink queuesVisited:mean 3.2053
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, mean"
+scalar SixFlags1.sink queuesVisited:max 10
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, max"
+scalar SixFlags1.sink totalServiceTime:mean 7.0062853706337
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, mean"
+attr unit s
+scalar SixFlags1.sink totalServiceTime:max 53.216187419295
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, max"
+attr unit s
+scalar SixFlags1.sink totalDelayTime:mean 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, mean"
+attr unit s
+scalar SixFlags1.sink totalDelayTime:max 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, max"
+attr unit s
+scalar SixFlags1.sink totalQueueingTime:mean 358.90656507023
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, mean"
+attr unit s
+scalar SixFlags1.sink totalQueueingTime:max 3794.6592892977
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, max"
+attr unit s
+scalar SixFlags1.sink lifeTime:mean 365.91285044086
+attr interpolationmode none
+attr title "lifetime of arrived jobs, mean"
+attr unit s
+scalar SixFlags1.sink lifeTime:max 3814.3322020409
+attr interpolationmode none
+attr title "lifetime of arrived jobs, max"
+attr unit s
+scalar SixFlags1.server4 busy:timeavg 0.99935065412311
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar SixFlags1.server5 busy:timeavg 0.88817549601426
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar SixFlags1.server6 busy:timeavg 0.89885560279577
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar SixFlags1.server7 busy:timeavg 0.90298949086519
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar SixFlags1.server8 busy:timeavg 0.9304568589597
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar SixFlags1.passiveQueue1 queueingTime:mean 2.0402706199968
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar SixFlags1.passiveQueue1 queueingTime:max 13.163649179585
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar SixFlags1.passiveQueue1 queueLength:timeavg 0.24361844479573
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar SixFlags1.passiveQueue1 queueLength:max 8
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar SixFlags1.passiveQueue1 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar SixFlags1.passiveQueue2 queueingTime:mean 1.9569136811968
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar SixFlags1.passiveQueue2 queueingTime:max 16.142934433853
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar SixFlags1.passiveQueue2 queueLength:timeavg 0.23881045997212
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar SixFlags1.passiveQueue2 queueLength:max 9
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar SixFlags1.passiveQueue2 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar SixFlags1.passiveQueue4 queueingTime:mean 1.9871093464658
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar SixFlags1.passiveQueue4 queueingTime:max 15.49964651811
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar SixFlags1.passiveQueue4 queueLength:timeavg 0.22844288454132
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar SixFlags1.passiveQueue4 queueLength:max 9
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar SixFlags1.passiveQueue4 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar SixFlags1.server1 busy:timeavg 0.364415602701
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar SixFlags1.server2 busy:timeavg 0.36129412894735
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar SixFlags1.server3 busy:timeavg 0.35460336074777
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar SixFlags1.passiveQueue5 queueingTime:mean 758.28957597353
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar SixFlags1.passiveQueue5 queueingTime:max 1999.1576731774
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar SixFlags1.passiveQueue5 queueLength:timeavg 151.62777555089
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar SixFlags1.passiveQueue5 queueLength:max 406
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar SixFlags1.passiveQueue5 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar SixFlags1.passiveQueue6 queueingTime:mean 147.05721713307
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar SixFlags1.passiveQueue6 queueingTime:max 360.81613152102
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar SixFlags1.passiveQueue6 queueLength:timeavg 25.519072892048
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar SixFlags1.passiveQueue6 queueLength:max 75
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar SixFlags1.passiveQueue6 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar SixFlags1.passiveQueue7 queueingTime:mean 140.96800355563
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar SixFlags1.passiveQueue7 queueingTime:max 479.33879352221
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar SixFlags1.passiveQueue7 queueLength:timeavg 25.235638814469
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar SixFlags1.passiveQueue7 queueLength:max 91
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar SixFlags1.passiveQueue7 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar SixFlags1.passiveQueue8 queueingTime:mean 299.53787074027
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar SixFlags1.passiveQueue8 queueingTime:max 641.96395113545
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar SixFlags1.passiveQueue8 queueLength:timeavg 52.726112129126
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar SixFlags1.passiveQueue8 queueLength:max 121
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar SixFlags1.passiveQueue8 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar SixFlags1.passiveQueue9 queueingTime:mean 379.06352673538
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar SixFlags1.passiveQueue9 queueingTime:max 889.76559677097
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar SixFlags1.passiveQueue9 queueLength:timeavg 68.030571714181
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar SixFlags1.passiveQueue9 queueLength:max 167
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar SixFlags1.passiveQueue9 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar SixFlags1.source created:last 20000
+attr interpolationmode none
+attr title "the number of jobs created, last"
+
